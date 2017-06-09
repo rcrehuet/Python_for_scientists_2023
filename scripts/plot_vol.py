@@ -14,7 +14,7 @@ labels_str={i:str(labels[i]) for i in labels}
 df_list = []
 for i in (1,2,3):
     key = "p{}".format(i)
-    filename = "../notebooks/data/p{}.dat".format(i)
+    filename = "../data/p{}.dat".format(i)
     df = pd.read_csv(filename, sep='\s+',skiprows=7, names =['Protein','V_SE', 
     'Void','VDW', 'Packing_Density',  'Time_Taken'])
     df.drop('Time_Taken', axis=1, inplace=True)
