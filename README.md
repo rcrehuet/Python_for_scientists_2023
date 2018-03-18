@@ -1,2 +1,2 @@
-# Python for Scientists 2017
-This repository contains the materials for the course _Python for Scientists_ that Fermin Huarte and I tought at the Universitat de Barcelona, on June 2013
+# Python para científicos 2018
+This repository contains the materials for the course _Python para científicos_ that Ramon Crehuet tought at the CSIC, on March 2018.
