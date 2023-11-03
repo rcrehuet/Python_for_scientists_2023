@@ -1,0 +1,3005 @@
+ Entering Gaussian System, Link 0=g03
+ Initial command:
+ /datos/easybuild/SLES11SP3/nehalem/software/legacy/gaussian03e01/g03/l1.exe /s/ramon/Gau-23432.inp -scrdir=/s/ramon/
+ Entering Link 1 = /datos/easybuild/SLES11SP3/nehalem/software/legacy/gaussian03e01/g03/l1.exe PID=     23434.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2004,2007, Gaussian, Inc.
+                  All Rights Reserved.
+  
+ This is the Gaussian(R) 03 program.  It is based on the
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 03, Revision E.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, J. A. Montgomery, Jr., T. Vreven, 
+ K. N. Kudin, J. C. Burant, J. M. Millam, S. S. Iyengar, J. Tomasi, 
+ V. Barone, B. Mennucci, M. Cossi, G. Scalmani, N. Rega, 
+ G. A. Petersson, H. Nakatsuji, M. Hada, M. Ehara, K. Toyota, 
+ R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, 
+ H. Nakai, M. Klene, X. Li, J. E. Knox, H. P. Hratchian, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ P. Y. Ayala, K. Morokuma, G. A. Voth, P. Salvador, J. J. Dannenberg, 
+ V. G. Zakrzewski, S. Dapprich, A. D. Daniels, M. C. Strain, 
+ O. Farkas, D. K. Malick, A. D. Rabuck, K. Raghavachari, 
+ J. B. Foresman, J. V. Ortiz, Q. Cui, A. G. Baboul, S. Clifford, 
+ J. Cioslowski, B. B. Stefanov, G. Liu, A. Liashenko, P. Piskorz, 
+ I. Komaromi, R. L. Martin, D. J. Fox, T. Keith, M. A. Al-Laham, 
+ C. Y. Peng, A. Nanayakkara, M. Challacombe, P. M. W. Gill, 
+ B. Johnson, W. Chen, M. W. Wong, C. Gonzalez, and J. A. Pople, 
+ Gaussian, Inc., Wallingford CT, 2004.
+ 
+ ******************************************
+ Gaussian 03:  EM64L-G03RevE.01 11-Sep-2007
+                29-Oct-2020 
+ ******************************************
+ %nproc=4
+ Will use up to    4 processors via shared memory.
+ %Mem=8000Mb
+ ---------------------------------------------------
+ #N CCSD(T, T1Diag, CONVER=5)/cc-pVQZ SCF=Tight Scan
+ ---------------------------------------------------
+ 1/38=1,60=1/1,8;
+ 2/17=6,18=5,29=3,40=1/2;
+ 3/5=16,6=2,11=9,16=1,25=1,30=1/1,2,3;
+ 4//1;
+ 5/5=2,32=2,38=5/2;
+ 8/6=7,9=120000,10=1/1,4;
+ 9/5=7,9=5,14=2,36=1/13;
+ 6/7=2,8=2,9=2,10=2,18=1/1;
+ 1/60=1/8(1);
+ 99/9=1/99;
+ 2/29=3/2;
+ 3/5=16,6=2,11=9,16=1,25=1,30=1/1,2,3;
+ 4/5=5,16=3/1;
+ 5/5=2,32=2,38=5/2;
+ 8/6=7,9=120000,10=1/1,4;
+ 9/5=7,9=5,14=2,36=1/13;
+ 1/60=1/8(-6);
+ 99/9=1/99;
+ ---
+ Ne2
+ ---
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ Ne
+ Ne                   1    d
+       Variables:
+  d                     2.7    Scan 20    0.1    
+ 
+ Scan the potential surface.
+ Variable   Value     No. Steps Step-Size
+ -------- ----------- --------- ---------
+     1       2.700000      20      0.1000
+ A total of     21 points will be computed.
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   2.700000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    2.700000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.350000
+    2         10             0        0.000000    0.000000   -1.350000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      6.9351184      6.9351184
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        19.5991558630 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTU) (DLTG) (DLTU)
+                 (PIG) (PIG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (DLTG) (DLTU) (DLTG) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTU) (DLTG)
+                 (DLTU) (PIG) (PIG) (SGU) (SGU) (SGG) (?A) (?B)
+                 (?A) (?B) (PHIU) (PHIU) (PHIG) (PHIG) (DLTG) (DLTU)
+                 (DLTG) (DLTU) (PIU) (PIU) (PIG) (PIG) (PIU) (PIU)
+                 (SGG) (PIG) (PIG) (SGU) (?C) (?C) (?D) (?D) (DLTG)
+                 (DLTU) (DLTG) (DLTU) (SGG) (?C) (?C) (?D) (?D)
+                 (SGU) (SGG) (DLTG) (DLTU) (PIU) (PIU) (DLTG) (DLTU)
+                 (SGU) (PIG) (PIG) (SGG) (SGU)
+ The electronic state of the initial guess is 1-SGG.
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086452186     A.U. after    8 cycles
+             Convg  =    0.1316D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   113427042 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9684213193D-02 E2=     -0.7384471889D-01
+     alpha-beta  T2 =       0.5236189713D-01 E2=     -0.4397045554D+00
+     beta-beta   T2 =       0.9684213193D-02 E2=     -0.7384471889D-01
+ ANorm=    0.1035244089D+01
+ E2=       -0.5873939932D+00 EUMP2=       -0.25767384617880D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47312477D-02
+ E3=       -0.56160250D-03        EUMP3=      -0.25767440778D+03
+ E4(DQ)=   -0.16267488D-03        UMP4(DQ)=   -0.25767457046D+03
+ E4(SDQ)=  -0.24259406D-02        UMP4(SDQ)=  -0.25767683372D+03
+ DE(Corr)= -0.58315390     E(CORR)=     -257.66960609    
+ NORM(A)=   0.10342137D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58924227     E(CORR)=     -257.67569446     Delta=-6.09D-03
+ NORM(A)=   0.10354712D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58938340     E(CORR)=     -257.67583558     Delta=-1.41D-04
+ NORM(A)=   0.10356058D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58960512     E(CORR)=     -257.67605731     Delta=-2.22D-04
+ NORM(A)=   0.10356361D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58961713     E(CORR)=     -257.67606932     Delta=-1.20D-05
+ NORM(A)=   0.10356379D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58961717     E(CORR)=     -257.67606936     Delta=-4.19D-08
+ NORM(A)=   0.10356377D+01
+ T1 Diagnostic =     0.00550947
+ Largest amplitude= 1.63D-02
+ Time for triples=       28.84 seconds.
+ T4(CCSD)= -0.11495643D-01
+ T5(CCSD)=  0.38820986D-03
+ CCSD(T)= -0.25768717679D+03
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIU) (PHIU) (PHIG) (PHIG) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (PIU) (PIU) (SGG) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ The electronic state is 1-SGG.
+ Alpha  occ. eigenvalues --  -32.77107 -32.77107  -1.93030  -1.92802  -0.85818
+ Alpha  occ. eigenvalues --   -0.85013  -0.85013  -0.84731  -0.84731  -0.83957
+ Alpha virt. eigenvalues --    0.68208   0.76984   0.76984   0.85081   0.85081
+ Alpha virt. eigenvalues --    0.86264   0.92288   1.13937   1.97505   1.99117
+ Alpha virt. eigenvalues --    1.99117   1.99741   1.99741   1.99835   1.99835
+ Alpha virt. eigenvalues --    2.00645   2.00645   2.06407   3.90658   3.90658
+ Alpha virt. eigenvalues --    3.91967   3.96459   3.96459   4.06105   5.76641
+ Alpha virt. eigenvalues --    5.88263   5.90434   5.90434   5.90435   5.90435
+ Alpha virt. eigenvalues --    5.90435   5.90435   5.90435   5.90435   5.90445
+ Alpha virt. eigenvalues --    5.90445   5.90461   5.90461   5.90649   5.93883
+ Alpha virt. eigenvalues --    6.74379   6.75662   6.75662   6.76154   6.76154
+ Alpha virt. eigenvalues --    6.76225   6.76225   6.76881   6.76881   6.82476
+ Alpha virt. eigenvalues --   14.90381  14.90381  14.90381  14.90381  14.90383
+ Alpha virt. eigenvalues --   14.90383  14.90383  14.90383  14.90384  14.90384
+ Alpha virt. eigenvalues --   14.90384  14.90384  14.90385  14.90385  14.90385
+ Alpha virt. eigenvalues --   14.90385  14.90386  14.90388  15.78457  15.78457
+ Alpha virt. eigenvalues --   15.78835  15.82843  15.82843  15.91282  19.79483
+ Alpha virt. eigenvalues --   19.79483  19.79483  19.79483  19.79487  19.79487
+ Alpha virt. eigenvalues --   19.79487  19.79487  19.79495  19.79495  19.79499
+ Alpha virt. eigenvalues --   19.79499  19.79548  19.79646  20.94352  20.95184
+ Alpha virt. eigenvalues --   20.95184  20.95464  20.95464  20.95504  20.95504
+ Alpha virt. eigenvalues --   20.95886  20.95886  20.98790  66.48945  66.68519
+          Condensed to atoms (all electrons):
+              1          2
+     1  Ne  10.000723  -0.000723
+     2  Ne  -0.000723  10.000723
+ Mulliken atomic charges:
+              1
+     1  Ne   0.000000
+     2  Ne   0.000000
+ Sum of Mulliken charges=   0.00000
+ Atomic charges with hydrogens summed into heavy atoms:
+              1
+     1  Ne   0.000000
+     2  Ne   0.000000
+ Sum of Mulliken charges=   0.00000
+ Electronic spatial extent (au):  <R**2>=   148.8359
+ Charge=     0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=     0.0000    Y=     0.0000    Z=     0.0000  Tot=     0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=    -8.3675   YY=    -8.3675   ZZ=    -8.3776
+   XY=     0.0000   XZ=     0.0000   YZ=     0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=     0.0034   YY=     0.0034   ZZ=    -0.0067
+   XY=     0.0000   XZ=     0.0000   YZ=     0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=     0.0000  YYY=     0.0000  ZZZ=     0.0000  XYY=     0.0000
+  XXY=     0.0000  XXZ=     0.0000  XZZ=     0.0000  YZZ=     0.0000
+  YYZ=     0.0000  XYZ=     0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=    -3.9549 YYYY=    -3.9549 ZZZZ=   -95.4793 XXXY=     0.0000
+ XXXZ=     0.0000 YYYX=     0.0000 YYYZ=     0.0000 ZZZX=     0.0000
+ ZZZY=     0.0000 XXYY=    -1.3183 XXZZ=   -16.5704 YYZZ=   -16.5704
+ XXYZ=     0.0000 YYXZ=     0.0000 ZZXY=     0.0000
+ N-N= 1.959915586296D+01 E-N=-6.614768113238D+02  KE= 2.570917857703D+02
+ Symmetry AG   KE= 1.112928446827D+02
+ Symmetry B1G  KE= 1.130493775120D-37
+ Symmetry B2G  KE= 8.557704897790D+00
+ Symmetry B3G  KE= 8.557704897790D+00
+ Symmetry AU   KE= 1.142753464697D-37
+ Symmetry B1U  KE= 1.116987648067D+02
+ Symmetry B2U  KE= 8.492383242631D+00
+ Symmetry B3U  KE= 8.492383242631D+00
+ Variable Step   Value    
+ -------- ---- -----------
+     1       1    5.291233
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   2.800000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    2.800000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.400000
+    2         10             0        0.000000    0.000000   -1.400000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      6.4485986      6.4485986
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        18.8991860107 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIU) (PHIU) (PHIG) (PHIG) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (PIU) (PIU) (SGG) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086658554     A.U. after    6 cycles
+             Convg  =    0.1377D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   111809122 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9683865520D-02 E2=     -0.7383416222D-01
+     alpha-beta  T2 =       0.5236894080D-01 E2=     -0.4396926283D+00
+     beta-beta   T2 =       0.9683865520D-02 E2=     -0.7383416222D-01
+ ANorm=    0.1035247155D+01
+ E2=       -0.5873609528D+00 EUMP2=       -0.25767401950710D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47259580D-02
+ E3=       -0.54982404D-03        EUMP3=      -0.25767456933D+03
+ E4(DQ)=   -0.16934187D-03        UMP4(DQ)=   -0.25767473867D+03
+ E4(SDQ)=  -0.24321005D-02        UMP4(SDQ)=  -0.25767700143D+03
+ DE(Corr)= -0.58311419     E(CORR)=     -257.66977275    
+ NORM(A)=   0.10342145D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58920217     E(CORR)=     -257.67586072     Delta=-6.09D-03
+ NORM(A)=   0.10354718D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58934354     E(CORR)=     -257.67600210     Delta=-1.41D-04
+ NORM(A)=   0.10356061D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58956499     E(CORR)=     -257.67622355     Delta=-2.21D-04
+ NORM(A)=   0.10356363D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58957700     E(CORR)=     -257.67623555     Delta=-1.20D-05
+ NORM(A)=   0.10356381D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58957704     E(CORR)=     -257.67623559     Delta=-3.81D-08
+ NORM(A)=   0.10356380D+01
+ T1 Diagnostic =     0.00550441
+ Largest amplitude= 1.61D-02
+ Time for triples=       28.44 seconds.
+ T4(CCSD)= -0.11491098D-01
+ T5(CCSD)=  0.38840728D-03
+ CCSD(T)= -0.25768733828D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       2    5.480206
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   2.900000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    2.900000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.450000
+    2         10             0        0.000000    0.000000   -1.450000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      6.0115355      6.0115355
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        18.2474899414 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIU) (PHIU) (PHIG) (PHIG) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086787690     A.U. after    5 cycles
+             Convg  =    0.4050D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   108933730 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9683207016D-02 E2=     -0.7382538947D-01
+     alpha-beta  T2 =       0.5237258731D-01 E2=     -0.4396805684D+00
+     beta-beta   T2 =       0.9683207016D-02 E2=     -0.7382538947D-01
+ ANorm=    0.1035248280D+01
+ E2=       -0.5873313473D+00 EUMP2=       -0.25767411903775D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47219080D-02
+ E3=       -0.54243639D-03        EUMP3=      -0.25767466147D+03
+ E4(DQ)=   -0.17411800D-03        UMP4(DQ)=   -0.25767483559D+03
+ E4(SDQ)=  -0.24358338D-02        UMP4(SDQ)=  -0.25767709731D+03
+ DE(Corr)= -0.58308115     E(CORR)=     -257.66986884    
+ NORM(A)=   0.10342140D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58916799     E(CORR)=     -257.67595568     Delta=-6.09D-03
+ NORM(A)=   0.10354709D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58930977     E(CORR)=     -257.67609746     Delta=-1.42D-04
+ NORM(A)=   0.10356049D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58953088     E(CORR)=     -257.67631858     Delta=-2.21D-04
+ NORM(A)=   0.10356350D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58954287     E(CORR)=     -257.67633056     Delta=-1.20D-05
+ NORM(A)=   0.10356367D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58954290     E(CORR)=     -257.67633059     Delta=-3.34D-08
+ NORM(A)=   0.10356366D+01
+ T1 Diagnostic =     0.00549779
+ Largest amplitude= 1.59D-02
+ Time for triples=       28.38 seconds.
+ T4(CCSD)= -0.11486944D-01
+ T5(CCSD)=  0.38837566D-03
+ CCSD(T)= -0.25768742916D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       3    5.669178
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.000000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.500000
+    2         10             0        0.000000    0.000000   -1.500000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      5.6174459      5.6174459
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        17.6392402767 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIU) (PHIU) (PHIG) (PHIG) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086867304     A.U. after    6 cycles
+             Convg  =    0.7931D-09             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   106506850 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9682320901D-02 E2=     -0.7381796865D-01
+     alpha-beta  T2 =       0.5237373278D-01 E2=     -0.4396686383D+00
+     beta-beta   T2 =       0.9682320901D-02 E2=     -0.7381796865D-01
+ ANorm=    0.1035247977D+01
+ E2=       -0.5873045756D+00 EUMP2=       -0.25767417187987D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47188036D-02
+ E3=       -0.53847067D-03        EUMP3=      -0.25767471035D+03
+ E4(DQ)=   -0.17746269D-03        UMP4(DQ)=   -0.25767488781D+03
+ E4(SDQ)=  -0.24377439D-02        UMP4(SDQ)=  -0.25767714809D+03
+ DE(Corr)= -0.58305348     E(CORR)=     -257.66992079    
+ NORM(A)=   0.10342126D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58913865     E(CORR)=     -257.67600596     Delta=-6.09D-03
+ NORM(A)=   0.10354689D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58928095     E(CORR)=     -257.67614826     Delta=-1.42D-04
+ NORM(A)=   0.10356026D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58950171     E(CORR)=     -257.67636901     Delta=-2.21D-04
+ NORM(A)=   0.10356325D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58951367     E(CORR)=     -257.67638097     Delta=-1.20D-05
+ NORM(A)=   0.10356342D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58951369     E(CORR)=     -257.67638100     Delta=-2.80D-08
+ NORM(A)=   0.10356341D+01
+ T1 Diagnostic =     0.00549033
+ Largest amplitude= 1.58D-02
+ Time for triples=       28.67 seconds.
+ T4(CCSD)= -0.11483113D-01
+ T5(CCSD)=  0.38817541D-03
+ CCSD(T)= -0.25768747594D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       4    5.858151
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.100000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.100000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.550000
+    2         10             0        0.000000    0.000000   -1.550000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      5.2608755      5.2608755
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        17.0702325258 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIG) (PHIG) (PHIU) (PHIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086914793     A.U. after    5 cycles
+             Convg  =    0.9011D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   106506850 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9681292812D-02 E2=     -0.7381162111D-01
+     alpha-beta  T2 =       0.5237313170D-01 E2=     -0.4396571112D+00
+     beta-beta   T2 =       0.9681292812D-02 E2=     -0.7381162111D-01
+ ANorm=    0.1035246694D+01
+ E2=       -0.5872803534D+00 EUMP2=       -0.25767419514664D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47164198D-02
+ E3=       -0.53703478D-03        EUMP3=      -0.25767473218D+03
+ E4(DQ)=   -0.17974465D-03        UMP4(DQ)=   -0.25767491193D+03
+ E4(SDQ)=  -0.24383676D-02        UMP4(SDQ)=  -0.25767717055D+03
+ DE(Corr)= -0.58303022     E(CORR)=     -257.66994501    
+ NORM(A)=   0.10342107D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58911340     E(CORR)=     -257.67602819     Delta=-6.08D-03
+ NORM(A)=   0.10354664D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58925630     E(CORR)=     -257.67617109     Delta=-1.43D-04
+ NORM(A)=   0.10355996D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58947670     E(CORR)=     -257.67639149     Delta=-2.20D-04
+ NORM(A)=   0.10356295D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58948862     E(CORR)=     -257.67640342     Delta=-1.19D-05
+ NORM(A)=   0.10356312D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58948864     E(CORR)=     -257.67640344     Delta=-2.23D-08
+ NORM(A)=   0.10356310D+01
+ T1 Diagnostic =     0.00548271
+ Largest amplitude= 1.56D-02
+ Time for triples=       28.57 seconds.
+ T4(CCSD)= -0.11479597D-01
+ T5(CCSD)=  0.38786943D-03
+ CCSD(T)= -0.25768749517D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       5    6.047124
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.200000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.200000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.600000
+    2         10             0        0.000000    0.000000   -1.600000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      4.9372083      4.9372083
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        16.5367877594 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (?A) (?A) (?B)
+                 (?B) (PHIG) (PHIG) (PHIU) (PHIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTG) (DLTG) (DLTU) (DLTU) (PIU)
+                 (PIU) (PIG) (PIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086941389     A.U. after    5 cycles
+             Convg  =    0.6252D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   103706210 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9680207693D-02 E2=     -0.7380617364D-01
+     alpha-beta  T2 =       0.5237142777D-01 E2=     -0.4396462643D+00
+     beta-beta   T2 =       0.9680207693D-02 E2=     -0.7380617364D-01
+ ANorm=    0.1035244823D+01
+ E2=       -0.5872586116D+00 EUMP2=       -0.25767420000028D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47145868D-02
+ E3=       -0.53732538D-03        EUMP3=      -0.25767473733D+03
+ E4(DQ)=   -0.18125844D-03        UMP4(DQ)=   -0.25767491858D+03
+ E4(SDQ)=  -0.24381627D-02        UMP4(SDQ)=  -0.25767717549D+03
+ DE(Corr)= -0.58301064     E(CORR)=     -257.66995203    
+ NORM(A)=   0.10342085D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58909172     E(CORR)=     -257.67603311     Delta=-6.08D-03
+ NORM(A)=   0.10354635D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58923525     E(CORR)=     -257.67617664     Delta=-1.44D-04
+ NORM(A)=   0.10355965D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58945530     E(CORR)=     -257.67639669     Delta=-2.20D-04
+ NORM(A)=   0.10356262D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58946720     E(CORR)=     -257.67640859     Delta=-1.19D-05
+ NORM(A)=   0.10356279D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58946721     E(CORR)=     -257.67640860     Delta=-1.68D-08
+ NORM(A)=   0.10356277D+01
+ T1 Diagnostic =     0.00547550
+ Largest amplitude= 1.55D-02
+ Time for triples=       28.84 seconds.
+ T4(CCSD)= -0.11476423D-01
+ T5(CCSD)=  0.38751468D-03
+ CCSD(T)= -0.25768749751D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       6    6.236096
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.300000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.300000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.650000
+    2         10             0        0.000000    0.000000   -1.650000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      4.6425173      4.6425173
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        16.0356729788 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (PIU) (PIU) (PIG)
+                 (PIG) (DLTG) (DLTG) (SGG) (DLTU) (DLTU) (SGU)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIU) (PIU) (PIG) (PIG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG)
+                 (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086954566     A.U. after    5 cycles
+             Convg  =    0.4734D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   103143010 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9679140593D-02 E2=     -0.7380151739D-01
+     alpha-beta  T2 =       0.5236914505D-01 E2=     -0.4396363447D+00
+     beta-beta   T2 =       0.9679140593D-02 E2=     -0.7380151739D-01
+ ANorm=    0.1035242690D+01
+ E2=       -0.5872393795D+00 EUMP2=       -0.25767419394537D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47131771D-02
+ E3=       -0.53865713D-03        EUMP3=      -0.25767473260D+03
+ E4(DQ)=   -0.18223531D-03        UMP4(DQ)=   -0.25767491484D+03
+ E4(SDQ)=  -0.24374958D-02        UMP4(SDQ)=  -0.25767717010D+03
+ DE(Corr)= -0.58299421     E(CORR)=     -257.66994877    
+ NORM(A)=   0.10342062D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58907325     E(CORR)=     -257.67602781     Delta=-6.08D-03
+ NORM(A)=   0.10354607D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58921738     E(CORR)=     -257.67617194     Delta=-1.44D-04
+ NORM(A)=   0.10355934D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58943713     E(CORR)=     -257.67639170     Delta=-2.20D-04
+ NORM(A)=   0.10356231D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58944900     E(CORR)=     -257.67640356     Delta=-1.19D-05
+ NORM(A)=   0.10356247D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58944901     E(CORR)=     -257.67640357     Delta=-1.16D-08
+ NORM(A)=   0.10356245D+01
+ T1 Diagnostic =     0.00546910
+ Largest amplitude= 1.54D-02
+ Time for triples=       29.27 seconds.
+ T4(CCSD)= -0.11473623D-01
+ T5(CCSD)=  0.38715640D-03
+ CCSD(T)= -0.25768749004D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       7    6.425069
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.400000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.400000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.700000
+    2         10             0        0.000000    0.000000   -1.700000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      4.3734441      4.3734441
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        15.5640355382 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG)
+                 (DLTU) (DLTU) (PIG) (PIG) (SGU) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU)
+                 (PHIU) (PHIG) (PHIG) (SGG) (SGU) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086959416     A.U. after    4 cycles
+             Convg  =    0.9067D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   102015586 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9678149869D-02 E2=     -0.7379757502D-01
+     alpha-beta  T2 =       0.5236668334D-01 E2=     -0.4396275355D+00
+     beta-beta   T2 =       0.9678149869D-02 E2=     -0.7379757502D-01
+ ANorm=    0.1035240544D+01
+ E2=       -0.5872226855D+00 EUMP2=       -0.25767418210115D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47120943D-02
+ E3=       -0.54048765D-03        EUMP3=      -0.25767472259D+03
+ E4(DQ)=   -0.18285179D-03        UMP4(DQ)=   -0.25767490544D+03
+ E4(SDQ)=  -0.24366384D-02        UMP4(SDQ)=  -0.25767715923D+03
+ DE(Corr)= -0.58298049     E(CORR)=     -257.66993990    
+ NORM(A)=   0.10342041D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58905768     E(CORR)=     -257.67601709     Delta=-6.08D-03
+ NORM(A)=   0.10354581D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58920235     E(CORR)=     -257.67616177     Delta=-1.45D-04
+ NORM(A)=   0.10355906D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58942185     E(CORR)=     -257.67638127     Delta=-2.19D-04
+ NORM(A)=   0.10356202D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58943369     E(CORR)=     -257.67639310     Delta=-1.18D-05
+ NORM(A)=   0.10356218D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58943369     E(CORR)=     -257.67639311     Delta=-7.07D-09
+ NORM(A)=   0.10356216D+01
+ T1 Diagnostic =     0.00546371
+ Largest amplitude= 1.54D-02
+ Time for triples=       28.81 seconds.
+ T4(CCSD)= -0.11471218D-01
+ T5(CCSD)=  0.38682572D-03
+ CCSD(T)= -0.25768747750D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       8    6.614041
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.500000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.500000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.750000
+    2         10             0        0.000000    0.000000   -1.750000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      4.1271031      4.1271031
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        15.1193488086 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PHIU) (PHIU) (PHIG) (PHIG) (PIG) (PIG)
+                 (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (PHIG)
+                 (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B) (SGG)
+                 (PIU) (PIU) (PIG) (PIG) (SGU) (PIU) (PIU) (PIG)
+                 (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG)
+                 (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086959429     A.U. after    4 cycles
+             Convg  =    0.6002D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   101900898 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9677273997D-02 E2=     -0.7379427963D-01
+     alpha-beta  T2 =       0.5236432110D-01 E2=     -0.4396199349D+00
+     beta-beta   T2 =       0.9677273997D-02 E2=     -0.7379427963D-01
+ ANorm=    0.1035238557D+01
+ E2=       -0.5872084942D+00 EUMP2=       -0.25767416792343D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47112647D-02
+ E3=       -0.54242571D-03        EUMP3=      -0.25767471035D+03
+ E4(DQ)=   -0.18323738D-03        UMP4(DQ)=   -0.25767489359D+03
+ E4(SDQ)=  -0.24357722D-02        UMP4(SDQ)=  -0.25767714612D+03
+ DE(Corr)= -0.58296912     E(CORR)=     -257.66992855    
+ NORM(A)=   0.10342023D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58904473     E(CORR)=     -257.67600416     Delta=-6.08D-03
+ NORM(A)=   0.10354558D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58918986     E(CORR)=     -257.67614929     Delta=-1.45D-04
+ NORM(A)=   0.10355881D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58940915     E(CORR)=     -257.67636858     Delta=-2.19D-04
+ NORM(A)=   0.10356177D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58942097     E(CORR)=     -257.67638040     Delta=-1.18D-05
+ NORM(A)=   0.10356192D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58942097     E(CORR)=     -257.67638040     Delta=-3.29D-09
+ NORM(A)=   0.10356191D+01
+ T1 Diagnostic =     0.00545938
+ Largest amplitude= 1.53D-02
+ Time for triples=       28.60 seconds.
+ T4(CCSD)= -0.11469212D-01
+ T5(CCSD)=  0.38654029D-03
+ CCSD(T)= -0.25768746307D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1       9    6.803014
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.600000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.600000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.800000
+    2         10             0        0.000000    0.000000   -1.800000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.9010041      3.9010041
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        14.6993668972 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (PHIG)
+                 (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B) (SGG)
+                 (PIU) (PIU) (PIG) (PIG) (SGU) (PIU) (PIU) (PIG)
+                 (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGG) (SGU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086956963     A.U. after    4 cycles
+             Convg  =    0.4138D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   100556386 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9676531017D-02 E2=     -0.7379156270D-01
+     alpha-beta  T2 =       0.5236222349D-01 E2=     -0.4396135508D+00
+     beta-beta   T2 =       0.9676531017D-02 E2=     -0.7379156270D-01
+ ANorm=    0.1035236826D+01
+ E2=       -0.5871966762D+00 EUMP2=       -0.25767415363951D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47106310D-02
+ E3=       -0.54422357D-03        EUMP3=      -0.25767469786D+03
+ E4(DQ)=   -0.18348243D-03        UMP4(DQ)=   -0.25767488135D+03
+ E4(SDQ)=  -0.24350023D-02        UMP4(SDQ)=  -0.25767713287D+03
+ DE(Corr)= -0.58295978     E(CORR)=     -257.66991675    
+ NORM(A)=   0.10342007D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58903410     E(CORR)=     -257.67599106     Delta=-6.07D-03
+ NORM(A)=   0.10354539D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58917960     E(CORR)=     -257.67613657     Delta=-1.46D-04
+ NORM(A)=   0.10355861D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58939874     E(CORR)=     -257.67635570     Delta=-2.19D-04
+ NORM(A)=   0.10356156D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58941053     E(CORR)=     -257.67636749     Delta=-1.18D-05
+ NORM(A)=   0.10356171D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58941053     E(CORR)=     -257.67636749     Delta=-2.68D-10
+ NORM(A)=   0.10356170D+01
+ T1 Diagnostic =     0.00545604
+ Largest amplitude= 1.52D-02
+ Time for triples=       28.77 seconds.
+ T4(CCSD)= -0.11467582D-01
+ T5(CCSD)=  0.38630662D-03
+ CCSD(T)= -0.25768744877D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      10    6.991987
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.700000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.700000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.850000
+    2         10             0        0.000000    0.000000   -1.850000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.6929886      3.6929886
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        14.3020867108 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (SGG) (SGU) (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (PHIG)
+                 (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B) (SGG)
+                 (PIU) (PIU) (PIG) (PIG) (SGU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PIG) (PIG) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086953541     A.U. after    4 cycles
+             Convg  =    0.2722D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation   100051042 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9675922464D-02 E2=     -0.7378935158D-01
+     alpha-beta  T2 =       0.5236046599D-01 E2=     -0.4396083149D+00
+     beta-beta   T2 =       0.9675922464D-02 E2=     -0.7378935158D-01
+ ANorm=    0.1035235389D+01
+ E2=       -0.5871870180D+00 EUMP2=       -0.25767414055915D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47101484D-02
+ E3=       -0.54575153D-03        EUMP3=      -0.25767468631D+03
+ E4(DQ)=   -0.18364647D-03        UMP4(DQ)=   -0.25767486996D+03
+ E4(SDQ)=  -0.24343758D-02        UMP4(SDQ)=  -0.25767712069D+03
+ DE(Corr)= -0.58295218     E(CORR)=     -257.66990572    
+ NORM(A)=   0.10341994D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58902548     E(CORR)=     -257.67597902     Delta=-6.07D-03
+ NORM(A)=   0.10354524D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58917127     E(CORR)=     -257.67612481     Delta=-1.46D-04
+ NORM(A)=   0.10355845D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58939028     E(CORR)=     -257.67634382     Delta=-2.19D-04
+ NORM(A)=   0.10356139D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58940207     E(CORR)=     -257.67635561     Delta=-1.18D-05
+ NORM(A)=   0.10356155D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58940206     E(CORR)=     -257.67635560     Delta= 2.04D-09
+ NORM(A)=   0.10356153D+01
+ T1 Diagnostic =     0.00545356
+ Largest amplitude= 1.52D-02
+ Time for triples=       28.77 seconds.
+ T4(CCSD)= -0.11466291D-01
+ T5(CCSD)=  0.38612339D-03
+ CCSD(T)= -0.25768743577D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      11    7.180959
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.800000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.800000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.900000
+    2         10             0        0.000000    0.000000   -1.900000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.5011782      3.5011782
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        13.9257160079 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (PIG)
+                 (PIG) (DLTU) (DLTU) (PHIU) (PHIU) (PHIG) (PHIG)
+                 (SGG) (SGU) (PIU) (PIU) (SGG) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTU) (DLTU) (DLTG) (DLTG) (PHIG)
+                 (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B) (SGG)
+                 (PIU) (PIU) (PIG) (PIG) (SGU) (PIU) (PIU) (PIG)
+                 (PIG) (SGG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (DLTG) (DLTG) (PIG) (PIG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086950073     A.U. after    3 cycles
+             Convg  =    0.9040D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    98861666 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9675439643D-02 E2=     -0.7378757260D-01
+     alpha-beta  T2 =       0.5235906668D-01 E2=     -0.4396041112D+00
+     beta-beta   T2 =       0.9675439643D-02 E2=     -0.7378757260D-01
+ ANorm=    0.1035234247D+01
+ E2=       -0.5871792564D+00 EUMP2=       -0.25767412932928D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47097817D-02
+ E3=       -0.54696360D-03        EUMP3=      -0.25767467629D+03
+ E4(DQ)=   -0.18376659D-03        UMP4(DQ)=   -0.25767486006D+03
+ E4(SDQ)=  -0.24339017D-02        UMP4(SDQ)=  -0.25767711019D+03
+ DE(Corr)= -0.58294603     E(CORR)=     -257.66989610    
+ NORM(A)=   0.10341984D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58901857     E(CORR)=     -257.67596864     Delta=-6.07D-03
+ NORM(A)=   0.10354512D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58916457     E(CORR)=     -257.67611464     Delta=-1.46D-04
+ NORM(A)=   0.10355832D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58938349     E(CORR)=     -257.67633357     Delta=-2.19D-04
+ NORM(A)=   0.10356126D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58939527     E(CORR)=     -257.67634534     Delta=-1.18D-05
+ NORM(A)=   0.10356142D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58939526     E(CORR)=     -257.67634534     Delta= 3.73D-09
+ NORM(A)=   0.10356140D+01
+ T1 Diagnostic =     0.00545177
+ Largest amplitude= 1.52D-02
+ Time for triples=       28.65 seconds.
+ T4(CCSD)= -0.11465291D-01
+ T5(CCSD)=  0.38598482D-03
+ CCSD(T)= -0.25768742464D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      12    7.369932
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   3.900000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    3.900000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    1.950000
+    2         10             0        0.000000    0.000000   -1.950000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.3239325      3.3239325
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        13.5686463667 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (PIG) (PIG) (DLTG)
+                 (DLTG) (DLTU) (DLTU) (SGG) (PHIU) (PHIU) (PHIG)
+                 (PHIG) (SGU) (PIU) (PIU) (DLTU) (DLTU) (DLTG)
+                 (DLTG) (SGG) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU)
+                 (PIU) (PIG) (PIG) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (PIU)
+                 (PIU) (SGU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086947033     A.U. after    3 cycles
+             Convg  =    0.7352D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    97140322 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9675061095D-02 E2=     -0.7378614803D-01
+     alpha-beta  T2 =       0.5235797258D-01 E2=     -0.4396007697D+00
+     beta-beta   T2 =       0.9675061095D-02 E2=     -0.7378614803D-01
+ ANorm=    0.1035233353D+01
+ E2=       -0.5871730658D+00 EUMP2=       -0.25767412009830D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47095016D-02
+ E3=       -0.54788414D-03        EUMP3=      -0.25767466798D+03
+ E4(DQ)=   -0.18386225D-03        UMP4(DQ)=   -0.25767485184D+03
+ E4(SDQ)=  -0.24335612D-02        UMP4(SDQ)=  -0.25767710154D+03
+ DE(Corr)= -0.58294106     E(CORR)=     -257.66988810    
+ NORM(A)=   0.10341976D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58901304     E(CORR)=     -257.67596008     Delta=-6.07D-03
+ NORM(A)=   0.10354502D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58915920     E(CORR)=     -257.67610623     Delta=-1.46D-04
+ NORM(A)=   0.10355822D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58937806     E(CORR)=     -257.67632509     Delta=-2.19D-04
+ NORM(A)=   0.10356116D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58938983     E(CORR)=     -257.67633686     Delta=-1.18D-05
+ NORM(A)=   0.10356132D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58938982     E(CORR)=     -257.67633685     Delta= 4.92D-09
+ NORM(A)=   0.10356130D+01
+ T1 Diagnostic =     0.00545050
+ Largest amplitude= 1.51D-02
+ Time for triples=       28.46 seconds.
+ T4(CCSD)= -0.11464524D-01
+ T5(CCSD)=  0.38588242D-03
+ CCSD(T)= -0.25768741549D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      13    7.558905
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.000000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.000000
+    2         10             0        0.000000    0.000000   -2.000000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.1598133      3.1598133
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        13.2294302075 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (PIG) (PIG) (SGG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU) (PHIG)
+                 (PHIG) (SGU) (PIU) (PIU) (DLTU) (DLTU) (DLTG)
+                 (DLTG) (PIG) (PIG) (SGG) (SGU) (SGG) (SGU) (PIU)
+                 (PIU) (PIG) (PIG) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086944603     A.U. after    3 cycles
+             Convg  =    0.6391D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    95742562 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674771188D-02 E2=     -0.7378501319D-01
+     alpha-beta  T2 =       0.5235715223D-01 E2=     -0.4395981487D+00
+     beta-beta   T2 =       0.9674771188D-02 E2=     -0.7378501319D-01
+ ANorm=    0.1035232677D+01
+ E2=       -0.5871681751D+00 EUMP2=       -0.25767411277780D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47092875D-02
+ E3=       -0.54854766D-03        EUMP3=      -0.25767466133D+03
+ E4(DQ)=   -0.18394525D-03        UMP4(DQ)=   -0.25767484527D+03
+ E4(SDQ)=  -0.24333321D-02        UMP4(SDQ)=  -0.25767709466D+03
+ DE(Corr)= -0.58293707     E(CORR)=     -257.66988167    
+ NORM(A)=   0.10341970D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58900865     E(CORR)=     -257.67595326     Delta=-6.07D-03
+ NORM(A)=   0.10354495D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58915491     E(CORR)=     -257.67609951     Delta=-1.46D-04
+ NORM(A)=   0.10355815D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58937373     E(CORR)=     -257.67631833     Delta=-2.19D-04
+ NORM(A)=   0.10356109D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58938549     E(CORR)=     -257.67633009     Delta=-1.18D-05
+ NORM(A)=   0.10356124D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58938548     E(CORR)=     -257.67633009     Delta= 5.73D-09
+ NORM(A)=   0.10356123D+01
+ T1 Diagnostic =     0.00544963
+ Largest amplitude= 1.51D-02
+ Time for triples=       28.60 seconds.
+ T4(CCSD)= -0.11463944D-01
+ T5(CCSD)=  0.38580848D-03
+ CCSD(T)= -0.25768740822D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      14    7.747877
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.100000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.100000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.050000
+    2         10             0        0.000000    0.000000   -2.050000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      3.0075558      3.0075558
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        12.9067611780 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (PIG) (PIG) (PIU) (PIU) (DLTU) (DLTU)
+                 (DLTG) (DLTG) (SGG) (SGU) (SGG) (SGU) (PIU) (PIU)
+                 (PIG) (PIG) (DLTU) (DLTU) (DLTG) (DLTG) (PHIG)
+                 (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B) (SGG)
+                 (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU) (PIU)
+                 (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086942791     A.U. after    3 cycles
+             Convg  =    0.5513D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    93555810 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674550187D-02 E2=     -0.7378410761D-01
+     alpha-beta  T2 =       0.5235654530D-01 E2=     -0.4395960968D+00
+     beta-beta   T2 =       0.9674550187D-02 E2=     -0.7378410761D-01
+ ANorm=    0.1035232170D+01
+ E2=       -0.5871643120D+00 EUMP2=       -0.25767410710269D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47091223D-02
+ E3=       -0.54900999D-03        EUMP3=      -0.25767465611D+03
+ E4(DQ)=   -0.18402008D-03        UMP4(DQ)=   -0.25767484013D+03
+ E4(SDQ)=  -0.24331863D-02        UMP4(SDQ)=  -0.25767708930D+03
+ DE(Corr)= -0.58293385     E(CORR)=     -257.66987664    
+ NORM(A)=   0.10341966D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58900516     E(CORR)=     -257.67594795     Delta=-6.07D-03
+ NORM(A)=   0.10354490D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58915148     E(CORR)=     -257.67609427     Delta=-1.46D-04
+ NORM(A)=   0.10355810D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58937027     E(CORR)=     -257.67631306     Delta=-2.19D-04
+ NORM(A)=   0.10356104D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58938203     E(CORR)=     -257.67632482     Delta=-1.18D-05
+ NORM(A)=   0.10356119D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58938202     E(CORR)=     -257.67632481     Delta= 6.25D-09
+ NORM(A)=   0.10356117D+01
+ T1 Diagnostic =     0.00544903
+ Largest amplitude= 1.51D-02
+ Time for triples=       28.65 seconds.
+ T4(CCSD)= -0.11463507D-01
+ T5(CCSD)=  0.38575561D-03
+ CCSD(T)= -0.25768740256D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      15    7.936850
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.200000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.200000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.100000
+    2         10             0        0.000000    0.000000   -2.100000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.8660438      2.8660438
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        12.5994573405 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (DLTG) (DLTG) (DLTU) (DLTU) (SGU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (PIG) (PIG) (DLTU) (DLTU) (PIU)
+                 (PIU) (DLTG) (DLTG) (SGG) (SGU) (SGG) (SGU) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086941514     A.U. after    3 cycles
+             Convg  =    0.4646D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    92406370 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674381629D-02 E2=     -0.7378338137D-01
+     alpha-beta  T2 =       0.5235610003D-01 E2=     -0.4395944861D+00
+     beta-beta   T2 =       0.9674381629D-02 E2=     -0.7378338137D-01
+ ANorm=    0.1035231792D+01
+ E2=       -0.5871612489D+00 EUMP2=       -0.25767410276278D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47089934D-02
+ E3=       -0.54932298D-03        EUMP3=      -0.25767465209D+03
+ E4(DQ)=   -0.18408846D-03        UMP4(DQ)=   -0.25767483617D+03
+ E4(SDQ)=  -0.24330995D-02        UMP4(SDQ)=  -0.25767708519D+03
+ DE(Corr)= -0.58293123     E(CORR)=     -257.66987275    
+ NORM(A)=   0.10341962D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58900236     E(CORR)=     -257.67594387     Delta=-6.07D-03
+ NORM(A)=   0.10354486D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914872     E(CORR)=     -257.67609023     Delta=-1.46D-04
+ NORM(A)=   0.10355806D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58936749     E(CORR)=     -257.67630901     Delta=-2.19D-04
+ NORM(A)=   0.10356099D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937925     E(CORR)=     -257.67632076     Delta=-1.18D-05
+ NORM(A)=   0.10356115D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937924     E(CORR)=     -257.67632076     Delta= 6.59D-09
+ NORM(A)=   0.10356113D+01
+ T1 Diagnostic =     0.00544862
+ Largest amplitude= 1.51D-02
+ Time for triples=       28.48 seconds.
+ T4(CCSD)= -0.11463175D-01
+ T5(CCSD)=  0.38571786D-03
+ CCSD(T)= -0.25768739821D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      16    8.125822
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.300000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.300000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.150000
+    2         10             0        0.000000    0.000000   -2.150000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.7342895      2.7342895
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        12.3064467047 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (PIG) (PIG) (DLTU) (DLTU) (DLTG)
+                 (DLTG) (PIU) (PIU) (SGG) (SGU) (SGG) (SGU) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU) (SGU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086940657     A.U. after    3 cycles
+             Convg  =    0.3812D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    92406370 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674252012D-02 E2=     -0.7378279422D-01
+     alpha-beta  T2 =       0.5235577256D-01 E2=     -0.4395932117D+00
+     beta-beta   T2 =       0.9674252012D-02 E2=     -0.7378279422D-01
+ ANorm=    0.1035231509D+01
+ E2=       -0.5871588002D+00 EUMP2=       -0.25767409945758D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47088915D-02
+ E3=       -0.54953080D-03        EUMP3=      -0.25767464899D+03
+ E4(DQ)=   -0.18415077D-03        UMP4(DQ)=   -0.25767483314D+03
+ E4(SDQ)=  -0.24330521D-02        UMP4(SDQ)=  -0.25767708204D+03
+ DE(Corr)= -0.58292910     E(CORR)=     -257.66986976    
+ NORM(A)=   0.10341960D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58900009     E(CORR)=     -257.67594075     Delta=-6.07D-03
+ NORM(A)=   0.10354483D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914648     E(CORR)=     -257.67608714     Delta=-1.46D-04
+ NORM(A)=   0.10355802D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58936525     E(CORR)=     -257.67630590     Delta=-2.19D-04
+ NORM(A)=   0.10356096D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937700     E(CORR)=     -257.67631766     Delta=-1.18D-05
+ NORM(A)=   0.10356112D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937699     E(CORR)=     -257.67631765     Delta= 6.79D-09
+ NORM(A)=   0.10356110D+01
+ T1 Diagnostic =     0.00544833
+ Largest amplitude= 1.50D-02
+ Time for triples=       28.66 seconds.
+ T4(CCSD)= -0.11462921D-01
+ T5(CCSD)=  0.38569069D-03
+ CCSD(T)= -0.25768739488D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      17    8.314795
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.400000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.400000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.200000
+    2         10             0        0.000000    0.000000   -2.200000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.6114160      2.6114160
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        12.0267547341 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (PIG) (PIG) (DLTU) (DLTU) (DLTG)
+                 (DLTG) (SGU) (PIU) (PIU) (SGG) (SGU) (SGG) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086940108     A.U. after    3 cycles
+             Convg  =    0.3045D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    91339874 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674150974D-02 E2=     -0.7378231480D-01
+     alpha-beta  T2 =       0.5235552899D-01 E2=     -0.4395921918D+00
+     beta-beta   T2 =       0.9674150974D-02 E2=     -0.7378231480D-01
+ ANorm=    0.1035231293D+01
+ E2=       -0.5871568214D+00 EUMP2=       -0.25767409692892D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47088096D-02
+ E3=       -0.54966757D-03        EUMP3=      -0.25767464660D+03
+ E4(DQ)=   -0.18420699D-03        UMP4(DQ)=   -0.25767483080D+03
+ E4(SDQ)=  -0.24330297D-02        UMP4(SDQ)=  -0.25767707963D+03
+ DE(Corr)= -0.58292735     E(CORR)=     -257.66986746    
+ NORM(A)=   0.10341958D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58899825     E(CORR)=     -257.67593836     Delta=-6.07D-03
+ NORM(A)=   0.10354481D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914465     E(CORR)=     -257.67608476     Delta=-1.46D-04
+ NORM(A)=   0.10355800D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58936341     E(CORR)=     -257.67630352     Delta=-2.19D-04
+ NORM(A)=   0.10356094D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937516     E(CORR)=     -257.67631527     Delta=-1.18D-05
+ NORM(A)=   0.10356109D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937515     E(CORR)=     -257.67631526     Delta= 6.91D-09
+ NORM(A)=   0.10356108D+01
+ T1 Diagnostic =     0.00544814
+ Largest amplitude= 1.50D-02
+ Time for triples=       28.70 seconds.
+ T4(CCSD)= -0.11462724D-01
+ T5(CCSD)=  0.38567077D-03
+ CCSD(T)= -0.25768739232D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      18    8.503768
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.500000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.500000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.250000
+    2         10             0        0.000000    0.000000   -2.250000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.4966426      2.4966426
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        11.7594935178 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGU) (PIG) (PIG) (DLTU) (DLTU)
+                 (DLTG) (DLTG) (PIU) (PIU) (SGG) (SGU) (SGG) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086939768     A.U. after    3 cycles
+             Convg  =    0.2371D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    91320930 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674070853D-02 E2=     -0.7378191917D-01
+     alpha-beta  T2 =       0.5235534436D-01 E2=     -0.4395913645D+00
+     beta-beta   T2 =       0.9674070853D-02 E2=     -0.7378191917D-01
+ ANorm=    0.1035231127D+01
+ E2=       -0.5871552028D+00 EUMP2=       -0.25767409497133D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47087429D-02
+ E3=       -0.54975797D-03        EUMP3=      -0.25767464473D+03
+ E4(DQ)=   -0.18425718D-03        UMP4(DQ)=   -0.25767482899D+03
+ E4(SDQ)=  -0.24330220D-02        UMP4(SDQ)=  -0.25767707775D+03
+ DE(Corr)= -0.58292589     E(CORR)=     -257.66986566    
+ NORM(A)=   0.10341956D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58899673     E(CORR)=     -257.67593650     Delta=-6.07D-03
+ NORM(A)=   0.10354479D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914314     E(CORR)=     -257.67608291     Delta=-1.46D-04
+ NORM(A)=   0.10355798D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58936189     E(CORR)=     -257.67630166     Delta=-2.19D-04
+ NORM(A)=   0.10356092D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937364     E(CORR)=     -257.67631341     Delta=-1.18D-05
+ NORM(A)=   0.10356107D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937364     E(CORR)=     -257.67631341     Delta= 6.98D-09
+ NORM(A)=   0.10356106D+01
+ T1 Diagnostic =     0.00544799
+ Largest amplitude= 1.50D-02
+ Time for triples=       28.55 seconds.
+ T4(CCSD)= -0.11462567D-01
+ T5(CCSD)=  0.38565583D-03
+ CCSD(T)= -0.25768739032D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      19    8.692740
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.600000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.600000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.300000
+    2         10             0        0.000000    0.000000   -2.300000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.3892728      2.3892728
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        11.5038523543 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGU) (PIG) (PIG) (DLTU) (DLTU)
+                 (DLTG) (DLTG) (PIU) (PIU) (SGG) (SGU) (SGG) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086939567     A.U. after    3 cycles
+             Convg  =    0.1803D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    91285090 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9674006152D-02 E2=     -0.7378158930D-01
+     alpha-beta  T2 =       0.5235520110D-01 E2=     -0.4395906842D+00
+     beta-beta   T2 =       0.9674006152D-02 E2=     -0.7378158930D-01
+ ANorm=    0.1035230995D+01
+ E2=       -0.5871538628D+00 EUMP2=       -0.25767409342993D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47086878D-02
+ E3=       -0.54981888D-03        EUMP3=      -0.25767464325D+03
+ E4(DQ)=   -0.18430156D-03        UMP4(DQ)=   -0.25767482755D+03
+ E4(SDQ)=  -0.24330227D-02        UMP4(SDQ)=  -0.25767707627D+03
+ DE(Corr)= -0.58292467     E(CORR)=     -257.66986424    
+ NORM(A)=   0.10341955D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58899546     E(CORR)=     -257.67593503     Delta=-6.07D-03
+ NORM(A)=   0.10354478D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914188     E(CORR)=     -257.67608145     Delta=-1.46D-04
+ NORM(A)=   0.10355797D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58936063     E(CORR)=     -257.67630019     Delta=-2.19D-04
+ NORM(A)=   0.10356091D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937238     E(CORR)=     -257.67631195     Delta=-1.18D-05
+ NORM(A)=   0.10356106D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937237     E(CORR)=     -257.67631194     Delta= 7.02D-09
+ NORM(A)=   0.10356104D+01
+ T1 Diagnostic =     0.00544788
+ Largest amplitude= 1.50D-02
+ Time for triples=       28.61 seconds.
+ T4(CCSD)= -0.11462441D-01
+ T5(CCSD)=  0.38564429D-03
+ CCSD(T)= -0.25768738874D+03
+ Variable Step   Value    
+ -------- ---- -----------
+     1      20    8.881713
+ ------------------------------------------------------------------------
+                         Z-MATRIX (ANGSTROMS AND DEGREES)
+ CD Cent Atom  N1     Length/X     N2    Alpha/Y     N3     Beta/Z      J
+ ------------------------------------------------------------------------
+   1   1  Ne
+   2   2  Ne    1   4.700000(  1)
+ ------------------------------------------------------------------------
+                         Z-Matrix orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    0.000000
+    2         10             0        0.000000    0.000000    4.700000
+ ---------------------------------------------------------------------
+ Stoichiometry    Ne2
+ Framework group  D*H[C*(Ne.Ne)]
+ Deg. of freedom     1
+ Full point group                 D*H
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic     Atomic              Coordinates (Angstroms)
+ Number     Number      Type              X           Y           Z
+ ---------------------------------------------------------------------
+    1         10             0        0.000000    0.000000    2.350000
+    2         10             0        0.000000    0.000000   -2.350000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000      2.2886833      2.2886833
+ Standard basis: CC-pVQZ (5D, 7F)
+ There are    22 symmetry adapted basis functions of AG  symmetry.
+ There are     7 symmetry adapted basis functions of B1G symmetry.
+ There are    13 symmetry adapted basis functions of B2G symmetry.
+ There are    13 symmetry adapted basis functions of B3G symmetry.
+ There are     7 symmetry adapted basis functions of AU  symmetry.
+ There are    22 symmetry adapted basis functions of B1U symmetry.
+ There are    13 symmetry adapted basis functions of B2U symmetry.
+ There are    13 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+   110 basis functions,   184 primitive gaussians,   140 cartesian basis functions
+    10 alpha electrons       10 beta electrons
+       nuclear repulsion energy        11.2590895383 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
+ One-electron integrals computed using PRISM.
+ NBasis=   110 RedAO= T  NBF=    22     7    13    13     7    22    13    13
+ NBsUse=   110 1.00D-06 NBFU=    22     7    13    13     7    22    13    13
+ Initial guess read from the read-write file:
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG) (SGU)
+       Virtual   (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (SGG) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG) (PIG)
+                 (SGU) (DLTG) (DLTG) (DLTU) (DLTU) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGU) (PIG) (PIG) (DLTU) (DLTU)
+                 (DLTG) (DLTG) (PIU) (PIU) (SGG) (SGU) (SGG) (PIG)
+                 (PIG) (PIU) (PIU) (DLTU) (DLTU) (DLTG) (DLTG)
+                 (PHIG) (PHIG) (PHIU) (PHIU) (?A) (?A) (?B) (?B)
+                 (SGG) (PIU) (PIU) (PIG) (PIG) (SGU) (SGG) (SGU)
+                 (PIU) (PIU) (PIG) (PIG) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (PHIU) (PHIU) (PHIG) (PHIG) (SGG) (PIU) (PIU)
+                 (PIG) (PIG) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (SGU)
+ Harris functional with IExCor=  205 diagonalized for initial guess.
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Keep R1 integrals in memory in canonical form, NReq=    54711408.
+ SCF Done:  E(RHF) =  -257.086939452     A.U. after    3 cycles
+             Convg  =    0.1341D-08             -V/T =  2.0000
+             S**2   =   0.0000
+ ExpMin= 2.66D-01 ExpMax= 9.99D+04 ExpMxC= 9.59D+02 IAcc=1 IRadAn=         1 AccDes= 1.00D-06
+ HarFok:  IExCor= 205 AccDes= 1.00D-06 IRadAn=         1 IDoV=1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ Range of M.O.s used for correlation:     3   110
+ NBasis=   110 NAE=    10 NBE=    10 NFC=     2 NFV=     0
+ NROrb=    108 NOA=     8 NOB=     8 NVA=   100 NVB=   100
+ Estimate disk for full transformation    91285090 words.
+ Spin components of T(2) and E(2):
+     alpha-alpha T2 =       0.9673952986D-02 E2=     -0.7378131166D-01
+     alpha-beta  T2 =       0.5235508713D-01 E2=     -0.4395901175D+00
+     beta-beta   T2 =       0.9673952986D-02 E2=     -0.7378131166D-01
+ ANorm=    0.1035230889D+01
+ E2=       -0.5871527408D+00 EUMP2=       -0.25767409219259D+03
+ Iterations=  50 Convergence= 0.100D-04
+ Iteration Nr.   1
+ **********************
+ MP4(R+Q)=  0.47086416D-02
+ E3=       -0.54986136D-03        EUMP3=      -0.25767464205D+03
+ E4(DQ)=   -0.18434050D-03        UMP4(DQ)=   -0.25767482639D+03
+ E4(SDQ)=  -0.24330275D-02        UMP4(SDQ)=  -0.25767707508D+03
+ DE(Corr)= -0.58292364     E(CORR)=     -257.66986309    
+ NORM(A)=   0.10341954D+01
+ Iteration Nr.   2
+ **********************
+ DE(Corr)= -0.58899440     E(CORR)=     -257.67593385     Delta=-6.07D-03
+ NORM(A)=   0.10354477D+01
+ Iteration Nr.   3
+ **********************
+ DE(Corr)= -0.58914082     E(CORR)=     -257.67608027     Delta=-1.46D-04
+ NORM(A)=   0.10355796D+01
+ Iteration Nr.   4
+ **********************
+ DE(Corr)= -0.58935956     E(CORR)=     -257.67629901     Delta=-2.19D-04
+ NORM(A)=   0.10356089D+01
+ Iteration Nr.   5
+ **********************
+ DE(Corr)= -0.58937131     E(CORR)=     -257.67631077     Delta=-1.18D-05
+ NORM(A)=   0.10356105D+01
+ Iteration Nr.   6
+ **********************
+ DE(Corr)= -0.58937131     E(CORR)=     -257.67631076     Delta= 7.04D-09
+ NORM(A)=   0.10356103D+01
+ T1 Diagnostic =     0.00544780
+ Largest amplitude= 1.50D-02
+ Time for triples=       29.22 seconds.
+ T4(CCSD)= -0.11462337D-01
+ T5(CCSD)=  0.38563514D-03
+ CCSD(T)= -0.25768738746D+03
+ Scan completed.
+
+ Summary of the potential surface scan:
+   N       d          SCF          MP2          MP3    
+ ----  ---------  -----------  -----------  -----------
+    1     2.7000   -257.08645   -257.67385   -257.67441
+    2     2.8000   -257.08666   -257.67402   -257.67457
+    3     2.9000   -257.08679   -257.67412   -257.67466
+    4     3.0000   -257.08687   -257.67417   -257.67471
+    5     3.1000   -257.08691   -257.67420   -257.67473
+    6     3.2000   -257.08694   -257.67420   -257.67474
+    7     3.3000   -257.08695   -257.67419   -257.67473
+    8     3.4000   -257.08696   -257.67418   -257.67472
+    9     3.5000   -257.08696   -257.67417   -257.67471
+   10     3.6000   -257.08696   -257.67415   -257.67470
+   11     3.7000   -257.08695   -257.67414   -257.67469
+   12     3.8000   -257.08695   -257.67413   -257.67468
+   13     3.9000   -257.08695   -257.67412   -257.67467
+   14     4.0000   -257.08694   -257.67411   -257.67466
+   15     4.1000   -257.08694   -257.67411   -257.67466
+   16     4.2000   -257.08694   -257.67410   -257.67465
+   17     4.3000   -257.08694   -257.67410   -257.67465
+   18     4.4000   -257.08694   -257.67410   -257.67465
+   19     4.5000   -257.08694   -257.67409   -257.67464
+   20     4.6000   -257.08694   -257.67409   -257.67464
+   21     4.7000   -257.08694   -257.67409   -257.67464
+ ----  ---------  -----------  -----------  -----------
+  
+ 1\1\GINC-PERDIU20\Scan\RCCSD(T)-FC\CC-pVQZ\Ne2\RAMON\29-Oct-2020\1\\#N
+  CCSD(T, T1Diag, CONVER=5)/cc-pVQZ SCF=Tight Scan\\Ne2\\0,1\Ne\Ne,1,d\
+ \d=2.7,s,20,0.1\\Version=EM64L-G03RevE.01\HF=-257.0864522,-257.0866586
+ ,-257.0867877,-257.0868673,-257.0869148,-257.0869414,-257.0869546,-257
+ .0869594,-257.0869594,-257.086957,-257.0869535,-257.0869501,-257.08694
+ 7,-257.0869446,-257.0869428,-257.0869415,-257.0869407,-257.0869401,-25
+ 7.0869398,-257.0869396,-257.0869395\MP2=-257.6738462,-257.6740195,-257
+ .674119,-257.6741719,-257.6741951,-257.6742,-257.6741939,-257.6741821,
+ -257.6741679,-257.6741536,-257.6741406,-257.6741293,-257.6741201,-257.
+ 6741128,-257.6741071,-257.6741028,-257.6740995,-257.6740969,-257.67409
+ 5,-257.6740934,-257.6740922\MP3=-257.6744078,-257.6745693,-257.6746615
+ ,-257.6747104,-257.6747322,-257.6747373,-257.6747326,-257.6747226,-257
+ .6747103,-257.6746979,-257.6746863,-257.6746763,-257.674668,-257.67466
+ 13,-257.6746561,-257.6746521,-257.674649,-257.6746466,-257.6746447,-25
+ 7.6746432,-257.6746421\MP4D=-257.6793017,-257.6794646,-257.6795575,-25
+ 7.6796066,-257.6796283,-257.6796332,-257.679628,-257.6796175,-257.6796
+ 049,-257.679592,-257.6795801,-257.6795698,-257.6795613,-257.6795546,-2
+ 57.6795493,-257.6795452,-257.679542,-257.6795396,-257.6795377,-257.679
+ 5362,-257.679535\MP4DQ=-257.6745705,-257.6747387,-257.6748356,-257.674
+ 8878,-257.6749119,-257.6749186,-257.6749148,-257.6749054,-257.6748936,
+ -257.6748813,-257.67487,-257.6748601,-257.6748518,-257.6748453,-257.67
+ 48401,-257.6748362,-257.6748331,-257.6748308,-257.674829,-257.6748276,
+ -257.6748264\MP4SDQ=-257.6768337,-257.6770014,-257.6770973,-257.677148
+ 1,-257.6771705,-257.6771755,-257.6771701,-257.6771592,-257.6771461,-25
+ 7.6771329,-257.6771207,-257.6771102,-257.6771015,-257.6770947,-257.677
+ 0893,-257.6770852,-257.677082,-257.6770796,-257.6770778,-257.6770763,-
+ 257.6770751\CCSD=-257.6760694,-257.6762356,-257.6763306,-257.676381,-2
+ 57.6764034,-257.6764086,-257.6764036,-257.6763931,-257.6763804,-257.67
+ 63675,-257.6763556,-257.6763453,-257.6763369,-257.6763301,-257.6763248
+ ,-257.6763208,-257.6763176,-257.6763153,-257.6763134,-257.6763119,-257
+ .6763108\CCSD(T)=-257.6871768,-257.6873383,-257.6874292,-257.6874759,-
+ 257.6874952,-257.6874975,-257.68749,-257.6874775,-257.6874631,-257.687
+ 4488,-257.6874358,-257.6874246,-257.6874155,-257.6874082,-257.6874026,
+ -257.6873982,-257.6873949,-257.6873923,-257.6873903,-257.6873887,-257.
+ 6873875\RMSD=1.316e-09,1.377e-09,4.050e-09,7.931e-10,9.011e-09,6.252e-
+ 09,4.734e-09,9.067e-09,6.002e-09,4.138e-09,2.722e-09,9.040e-09,7.352e-
+ 09,6.391e-09,5.513e-09,4.646e-09,3.812e-09,3.045e-09,2.371e-09,1.803e-
+ 09,1.341e-09\Thermal=0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.\PG=D*H [C*(Ne1.Ne1)]\\@
+
+
+ The mind is not a vessel to be filled but a fire to be kindled.
+                                  -- Plutarch
+ Job cpu time:  0 days  0 hours 44 minutes 55.6 seconds.
+ File lengths (MBytes):  RWF=    114 Int=      0 D2E=      0 Chk=     17 Scr=      1
+ Normal termination of Gaussian 03 at Thu Oct 29 18:09:32 2020.
